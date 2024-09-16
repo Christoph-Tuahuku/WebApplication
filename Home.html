@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #f1f1f1, #e0e0e0);
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        h1 {
+            font-size: 3rem;
+            color: #007BFF;
+            margin-top: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        td {
+            padding: 20px;
+            vertical-align: top;
+        }
+        /* Adjusting table column widths */
+        .left-column {
+            width: 20%;
+        }
+        .middle-column {
+            width: 60%;
+        }
+        .right-column {
+            width: 20%;
+        }
+        /* Left Column */
+        .left-column img {
+            width: 90%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: block;
+            margin: 20px auto;
+            transition: transform 0.3s;
+        }
+        .left-column img:hover {
+            transform: scale(1.05);
+        }
+        /* Navigation Styles */
+        nav {
+            margin-top: 20px;
+            background-color: #4b4b4b;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        nav a {
+            display: inline-block;
+            margin: 0 10px;
+            font-size: 18px;
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #050505;
+        }
+        /* Banner Ad */
+        .banner {
+            background-color: #1c1818bb;
+            color: white;
+            text-align: center;
+            font-size: 24px;
+            padding: 20px;
+            margin-top: 30px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .banner:hover {
+            background-color: #0e0701;
+        }
+        /* Blog and Announcements Section */
+        .blog-section, .important-section {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 20px auto;
+            text-align: left;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .blog-section:hover, .important-section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .blog-section h2, .important-section h2 {
+            color: #007BFF;
+            font-size: 2rem;
+            border-bottom: 2px solid #007BFF;
+            padding-bottom: 10px;
+        }
+        .blog-section strong {
+            font-size: 1.4rem;
+            margin-bottom: 5px;
+            display: block;
+            color: #007BFF;
+        }
+        .blog-section em {
+            font-size: 1.1rem;
+            color: #555;
+        }
+        .important-section ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .important-section li {
+            margin: 10px 0;
+        }
+        .important-section a {
+            color: #007BFF;
+            text-decoration: none;
+            font-size: 1.2rem;
+            display: block;
+        }
+        .important-section a:hover {
+            text-decoration: underline;
+        }
+        /* Latest Updates Section in Right Column */
+        .updates-section {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 20px auto;
+            text-align: left;
+        }
+        .updates-section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .updates-section h2 {
+            color: #007BFF;
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #007BFF;
+            padding-bottom: 10px;
+        }
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 5px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to My Page</h1>
+
+    <!-- Banner Ad -->
+    <div class="banner" onclick="changeAd()">Click me to change ad!</div>
+
+    <table>
+        <tr>
+            <!-- Left Column with News Links -->
+            <td class="left-column">
+                <a href="https://www.namibian.com.na/" target="_blank">
+                    <img src="TheNamibian.jpg" alt="Namibian News">
+                </a>
+                <a href="https://www.nbc.na/" target="_blank">
+                    <img src="NBC.jpg" alt="NBC News">
+                </a>
+                <a href="https://neweralive.na/" target="_blank">
+                    <img src="newEra.jpg" alt="New Era News">
+                </a>
+            </td>
+            
+            <!-- Middle Column with Navigation, Blog, and Important Section -->
+            <td class="middle-column">
+                <nav>
+                    <a href="home.html">Home</a>
+                    <a href="contactdetails.html">Contact Details</a>
+                    <a href="aboutMe.html">About Me</a>
+                    <a href="login.html">Login</a>
+                    <a href="register.html">Register</a>
+                </nav>
+                
+                <!-- Blog Section -->
+                <div class="blog-section">
+                    <h2>Blog</h2>
+                    <strong>Just Another Month</strong>
+                    <em>Written by CT Tuahuku on September 2nd</em>
+                    <p>This is my second blog entry, and I just wanted to check in on you.</p>
+
+                    <strong>My First Blog Entry</strong>
+                    <em>Written by CT Tuahuku on September 3rd</em>
+                    <p>I'm Happy and Ready To Enter a New Month!</p>
+                </div>
+
+                <!-- Important Links Section -->
+                <div class="important-section">
+                    <h2>Useful Resources</h2>
+                    <ul>
+                        <li><a href="https://www.cyber.gov.au/acsc/view-all-content/advice/essential-eight-security-basics" target="_blank">Learn About Digital Security Features</a></li>
+                        <li><a href="https://www.codecademy.com/learn" target="_blank">Learn Programming on Codecademy</a></li>
+                        <li><a href="https://www.healthline.com/" target="_blank">Explore Health Resources on Healthline</a></li>
+                        <li><a href="https://www.investopedia.com/" target="_blank">Learn Finance on Investopedia</a></li>
+                    </ul>
+                </div>
+            </td>
+
+            <!-- Right Column with Latest Updates -->
+            <td class="right-column">
+                <div class="updates-section">
+                    <h2>Latest Updates</h2>
+                    <ul>
+                        <li>Update 1: Our new website is live! Check out the latest features and improvements.</li>
+                        <li>Update 2: We are excited to announce a new partnership with NUST.</li>
+                        <li>Update 3: Join our upcoming webinar on advanced data analysis techniques.</li>
+                    </ul>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Footer -->
+    <footer>
+        <p>Email: tjimbanae@gmail.com | &copy; 2024 Christoph T Tuahuku</p>
+    </footer>
+
+    <script>
+        function changeAd() {
+            const banner = document.querySelector('.banner');
+            banner.innerHTML = "This is your new ad content!";
+            banner.style.backgroundColor = '#4CAF50'; // Change banner color
+        }
+    </script>
+</body>
+</html>
